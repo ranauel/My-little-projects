@@ -1,0 +1,27 @@
+sorular= [
+     'Türkiyenin en kalabalık şehri?',
+     'Galatasarayın kuruluş tarihi?',
+    'Güney kore Alfabesinin adı nedir?',
+     'Malazgirt Savaşı ne zaman olmuştur?',
+     'FSM İstanbulu Ne zaman fethetti?',
+ ]
+ cevaplar= [
+     ['A)Ankara', 'B)İzmir', 'C) İstanbul'],
+     ['A)1903','B)1905', 'C)1907' ],
+     ['A)Hangul','B)Hangıl','C)Hanguk'],
+     ['A)1072','B)1071', 'C)1070'],
+     ['A)20','B)21','C)23']
+ ]
+ dogru_cevaplar = ['C','B','A','B','B']
+
+ def sor():
+     puan=0
+     for i in range(len(sorular)):
+         print(f'Soru{i+1}: {sorular[i]}')
+         for secenek in cevaplar[i]:
+             print(secenek)
+         cevap= input("Cevabınız nedir? ").upper()
+         if cevap == dogru_cevaplar[i]:
+             puan+=1
+         print(f'Toplam doğru cevap sayısı: {puan}')
+ sor()
