@@ -1,0 +1,22 @@
+
+while ("true"):
+    sozluk= {"toplama:":1 ,"çıkarma:":2 , "Bölme: ":3 ,"Çarpma : ":4}
+    print(sozluk)
+    a=int(input("Birinci sayıyı giriniz."))
+    b= int(input("İkinci sayıyı girniz."))
+    c= int(input("İşleminizi seçiniz"))
+    
+    if (c==1):
+        sonuc = a+b
+        print(sonuc)
+    elif (c==2):
+        sonuc = a-b
+        print(sonuc)
+    elif (c==3):
+        sonuc = a / b
+        print(sonuc)
+    elif (c==4):
+        sonuc = a * b
+        print(sonuc)
+else:
+    print("Yanlış girdiniz tekrar deneyiniz.")
