@@ -1,0 +1,20 @@
+print("Şehir tahmin etme oyununa hoşgeldiniz. Toplam 3 hakkınız bulunmaktadır. Başarılar dilerim :)")
+cevap = "londra"
+print("l*****")
+
+deneme_sayisi = 0
+maks_deneme = 3
+
+while deneme_sayisi < maks_deneme:
+    girilenkelime = input("Tahmininizi giriniz: ").lower().strip()
+
+    if girilenkelime == cevap:
+        print("✅ Doğru bildinizzz")
+        break  # Sadece doğruysa döngüden çık!
+    else:
+        deneme_sayisi += 1
+        kalan = maks_deneme - deneme_sayisi
+        if kalan > 0:
+            print(f"❌ Yanlış cevap! {kalan} deneme hakkınız kaldı.")
+        else:
+            print("🚫 Deneme hakkınız bitti.")
