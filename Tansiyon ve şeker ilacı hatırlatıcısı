@@ -1,0 +1,16 @@
+kullanıcı= print("İlaçların saatlerini sırasıyla belirtiniz")
+tansiyon= input("Tansiyon ilacı: ")
+seker= input("Şeker ilacı: ")
+
+import time
+from datetime import datetime
+while True:
+    now= datetime.now().strftime("%H:%M")
+    if now==tansiyon:
+        print("Tansiyon ilacı saatiniz")
+    elif now==seker:
+        print("Şeker ilacı saatiniz")
+        break
+    time.sleep(15)
+
+
